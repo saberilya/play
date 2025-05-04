@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на нашу свадьбу</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f8e5e5;
+            --secondary-color: #d4a5a5;
+            --accent-color: #b76e79;
+            --text-color: #5a3e36;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .overlay {
+            background-color: rgba(248, 229, 229, 0.85);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
+        .couple-names {
+            font-size: 2.5rem;
+            margin: 30px 0;
+            line-height: 1.3;
+        }
+        
+        .divider {
+            width: 100px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            margin: 30px auto;
+        }
+        
+        .invitation-card {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        
+        .detail-box {
+            flex: 1;
+            min-width: 200px;
+            margin: 15px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+        }
+        
+        .rsvp-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 0;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .rsvp-button:hover {
+            background-color: #9a5a65;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+        
+        @media (min-width: 1000px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .couple-names {
+                font-size: 1.8rem;
+            }
+            
+            .invitation-card {
+                padding: 20px;
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>Приглашение на свадьбу</h1>
+            <div class="divider"></div>
+            <div class="couple-names">             </div>
+            
+        </header>
+        <div class="invitation-card">
+            <p>Дорогие друзья и родные!</p>
+            <p>Мы рады сообщить вам, что <strong>8 августа 2025 года</strong> состоится наше бракосочетание.</p>
+            <p>Будем счастливы видеть вас в этот особенный день!</p>
+            
+            <div class="divider"></div>
+            
+            <div class="details">
+                <div class="detail-box">
+                    <h3>Настя</h3>
+                    <p><img src="NastyaP.jpg" height="250" width="259"></p>
+                    
+                </div>
+                
+                <div class="detail-box">
+                    <h3>Илья</h3>
+                        <p><img src="IlyaP.jpg" height="250" width="259"></p>
+                   
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            
+        </div>
+        <div class="invitation-card">
+            
+            
+            <div class="divider"></div>
+            
+            <div class="details">
+                <div class="detail-box">
+                    <h3>Когда</h3>
+                    <p>8 августа 2025 года</p>
+                    
+
+                    
+
+                  
+
+                </div>
+                
+                <div class="detail-box">
+                    <h3>Где</h3>
+                    <p>Ресторан "Сияние"</p>
+                    <p>ул. Цветочная, 28</p>
+                    <p>г. Луховицы</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            
+            
+        </div>
+        <div class="invitation-card">
+            <p>Расписание</p>
+           
+            
+            <div class="divider"></div>
+            
+            <div class="details">
+                <div class="detail-box">
+                    
+                    
+                    <p>Выкуп в 10:30</p>
+                    <p>Роспись в 12:20</p>
+
+                    <p>Катания и фотосессия в 13:00</p>
+                    <p>Банкет в 16:00</p>
+
+                  
+
+                </div>
+                
+                <div class="detail-box">
+                    <h3>Где</h3>
+                    <p>Ресторан "Сияние"</p>
+                    <p>ул. Цветочная, 28</p>
+                    <p>г. Луховицы</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <p>Пожалуйста, подтвердите ваше присутствие до 1 июля</p>
+            <!-- Кнопка, открывающая Telegram -->
+            <button class="rsvp-button" onclick="window.open('https://t.me/saberilya', '_blank')">Подтвердить присутствие</button>
+        </div>
+        </div>
+        </div>
+        
+        <footer>
+            <p>С любовью, Анастасия и Илья</p>
+            <p>По всем вопросам: +7 (999)-983-28-66</p>
+        </footer>
+    </div>
+</body>
+</html>
